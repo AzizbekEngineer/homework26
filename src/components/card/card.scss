@@ -1,0 +1,35 @@
+.card__wrapper {
+    padding: 40px 0;
+
+}
+
+.card__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+@media(max-width:1200px) {
+    .card__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media(max-width:900px) {
+    .card__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media(max-width:550px) {
+    .card__items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        justify-content: center;
+    }
+}
